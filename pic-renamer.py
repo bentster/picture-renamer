@@ -26,8 +26,8 @@ def get_exif_date_taken(path):
 
 def main():
     parser = argparse.ArgumentParser(description='Works magic to create thumbnails')
-    parser.add_argument('-s', '--source_dir', type=str, help='Name of source S3 bucket', required=True)
-    parser.add_argument('-t', '--target_dir', type=str, help='Target bucket for thumbnails', required=True)
+    parser.add_argument('-s', '--source_dir', type=str, help='Name of source folder', required=True)
+    parser.add_argument('-t', '--target_dir', type=str, help='Name of target folder', required=True)
     parser.add_argument('-d', '--hour_diff', type=int, help='Add hours to date', required=True)
 
     parsed_args = parser.parse_args()
